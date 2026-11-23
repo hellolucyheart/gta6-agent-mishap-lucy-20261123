@@ -44,6 +44,7 @@ def main() -> int:
     out_path = os.path.join(out_dir, "entry.txt")
     with open(out_path, "w", encoding="utf-8", newline="") as f:
         f.write(line)
+    print(line)
     print(f"wrote {len(line)} characters to {out_path}")
     return 0
 
